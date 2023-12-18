@@ -33,7 +33,9 @@ public class SpawnManager : MonoBehaviour
         {
             Instantiate(collectableObject, CreateRandomSpawnPosition(), collectableObject.transform.rotation);
         }
+        coinAmount = 2;
     }
+
     Vector3 CreateRandomSpawnPosition()
     {
      float xValue = Random.Range (-areaRange, areaRange);
